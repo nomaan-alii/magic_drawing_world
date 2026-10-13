@@ -1,0 +1,16 @@
+name: magic_drawing_world
+description: "A magical drawing and mini-game world for children."
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ^3.13.2
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
