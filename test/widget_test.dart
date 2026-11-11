@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This is a basic Flutter widget test.
 //
 // To perform an interaction with a widget in your test, use the WidgetTester
@@ -26,5 +27,17 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+=======
+
+import 'package:flutter_test/flutter_test.dart';
+import 'package:magic_drawing_world/main.dart';
+
+void main() {
+  testWidgets('Magic Drawing World opens', (tester) async {
+    await tester.pumpWidget(const MagicDrawingWorldApp());
+
+    expect(find.text('Magic'), findsOneWidget);
+    expect(find.text('Drawing World'), findsOneWidget);
+>>>>>>> 8f98b5802d135c903e8289ab6aa9edfdf99e6302
   });
 }

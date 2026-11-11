@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "myapp",
     "short_name": "myapp",
+=======
+    "name": "magic_drawing_world",
+    "short_name": "magic_drawing_world",
+>>>>>>> 8f98b5802d135c903e8289ab6aa9edfdf99e6302
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

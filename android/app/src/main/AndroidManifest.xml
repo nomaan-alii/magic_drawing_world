@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="myapp"
+=======
+        android:label="magic_drawing_world"
+>>>>>>> 8f98b5802d135c903e8289ab6aa9edfdf99e6302
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

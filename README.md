@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # myapp
+=======
+# magic_drawing_world
+>>>>>>> 8f98b5802d135c903e8289ab6aa9edfdf99e6302
 
 A new Flutter project.
 
