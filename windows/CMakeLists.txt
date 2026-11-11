@@ -1,18 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-<<<<<<< HEAD
 project(myapp LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "myapp")
-=======
-project(magic_drawing_world LANGUAGES CXX)
-
-# The name of the executable created for the application. Change this to change
-# the on-disk name of your application.
-set(BINARY_NAME "magic_drawing_world")
->>>>>>> 8f98b5802d135c903e8289ab6aa9edfdf99e6302
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
