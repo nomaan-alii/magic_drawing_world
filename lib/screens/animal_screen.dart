@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../navigation.dart';
 import '../theme.dart';
 import '../widgets/common_widgets.dart';
+import 'drawing_screen.dart';
 
 //  SCREEN 4 — PICK YOUR ANIMAL
 
@@ -35,6 +36,13 @@ class _AnimalScreenState extends State<AnimalScreen> {
       animal: animal,
       selected: _selected == animal.name,
       onTap: () => setState(() => _selected = animal.name),
+    );
+  }
+
+  void _startDrawing() {
+    final animal = _animals.firstWhere((a) => a.name == _selected);
+    Navigator.of(context).push(
+      fadeTo(DrawingScreen(animal: animal.name, emoji: animal.emoji)),
     );
   }
 
@@ -121,8 +129,7 @@ class _AnimalScreenState extends State<AnimalScreen> {
                   radius: 35,
                   depth: 6,
                   alignment: Alignment.center,
-                  // Next step: open the drawing screen (page 5) here.
-                  onTap: () => comingSoon(context, 'Drawing your $_selected'),
+                  onTap: _startDrawing,
                   child: const Label(
                     '✏️ Start drawing',
                     size: 22,
